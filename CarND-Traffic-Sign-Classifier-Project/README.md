@@ -17,5 +17,5 @@ The number of unique classes/labels in the data set is 43
 Here is a histogram of classes/labels of training, validation and test set. 
 Training:
 
-[image1]: ./train_histogram.png "Train histogram"
+[image1]: ./train_label_histogram.png "Train histogram"
 
