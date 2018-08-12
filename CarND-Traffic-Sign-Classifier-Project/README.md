@@ -99,5 +99,97 @@ The model architecture I chose to use is based on a modified version of LeNet me
 
 Here are five German traffic signs that I found on the web:
 
+<img src="5-new-sign.png" width="480" alt="Train_label_histogram" />
 
+These images are all quite easy to recognize for humans.
+
+### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+
+Image1 predicted: No entry, real: No entry
+
+Image2 predicted: Yield, real: Yield
+
+Image3 predicted: Roundabout Mandatory, real: Roundabout Mandatory
+
+Image4 predicted: Speed limit (50km/h), real: Speed limit (50km/h)
+
+Image5 predicted: Slippery road, real: Double curve
+
+The accuracy of the new images is 80%, which is less than the test set accuracy.
+
+### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+
+Image1:
+
+Actual label: No entry
+
+Top1 prediction: No entry, confidence: 100.00%
+
+Top2 prediction: Keep left, confidence: 0.00%
+
+Top3 prediction: Stop, confidence: 0.00%
+
+Top4 prediction: Speed limit (20km/h), confidence: 0.00%
+
+Top5 prediction: Speed limit (30km/h), confidence: 0.00%
+
+
+Image2:
+
+Actual label: Yield
+
+Top1 prediction: Yield, confidence: 100.00%
+
+Top2 prediction: No vehicles, confidence: 0.00%
+
+Top3 prediction: Speed limit (50km/h), confidence: 0.00%
+
+Top4 prediction: Speed limit (20km/h), confidence: 0.00%
+
+Top5 prediction: Speed limit (30km/h), confidence: 0.00%
+
+
+Image3
+
+Actual label: Roundabout mandatory
+
+Top1 prediction: Roundabout mandatory, confidence: 100.00%
+
+Top2 prediction: Priority road, confidence: 0.00%
+
+Top3 prediction: Turn right ahead, confidence: 0.00%
+
+Top4 prediction: Traffic signals, confidence: 0.00%
+
+Top5 prediction: Right-of-way at the next intersection, confidence: 0.00%
+
+
+Image4:
+
+Actual label: Speed limit (50km/h)
+
+Top1 prediction: Speed limit (50km/h), confidence: 100.00%
+
+Top2 prediction: Speed limit (20km/h), confidence: 0.00%
+
+Top3 prediction: Speed limit (60km/h), confidence: 0.00%
+
+Top4 prediction: Speed limit (80km/h), confidence: 0.00%
+
+Top5 prediction: End of no passing by vehicles over 3.5 metric tons, confidence: 0.00%
+
+
+[Image5:]
+
+Actual label: Double curve
+
+Top1 prediction: Slippery road, confidence: 98.06%
+
+Top2 prediction: Double curve, confidence: 1.02%
+
+Top3 prediction: Right-of-way at the next intersection, confidence: 0.92%
+
+Top4 prediction: Beware of ice/snow, confidence: 0.00%
+
+Top5 prediction: Road narrows on the right, confidence: 0.00%
 
