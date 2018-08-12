@@ -41,8 +41,21 @@ Here is an example of a traffic sign image before and after gray scaling.
 Then, I normalized images to the range between -1 and 1, because converting inputs between 
 -1 and 1 will make training of neural networks faster.
 
-I decided to generate additional data because the number of examples of each class is highly unbalanced and this will harm the performance of the model. To add more data to the data set, 
-I used three techniques to randomly perturb a sample image,
+I decided to generate additional data because the number of examples of each class is highly unbalanced and this will harm the performance of the model. To add more data to the data set, I used three techniques to randomly perturb a sample image,
+
 Random scaling:
 
-<img src="random_scale.png" width="480" alt="Grayscale" /> 
+<img src="random_scaling.png" width="480" alt="Randomscale" /> 
+
+Random rotation:
+
+<img src="random_scaling.png" width="480" alt="Randomscale" /> 
+
+Random translation
+
+<img src="random_translation.png" width="480" alt="Randomscale" /> 
+
+I augmented those classes that have less than 1200 samples to 1200, and here is the histogram of number of samples for training set after data augmentation:
+
+<img src="train_label_after.png" width="480" alt="Randomscale" />
+
