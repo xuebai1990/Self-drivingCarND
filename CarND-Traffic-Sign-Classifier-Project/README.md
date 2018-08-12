@@ -63,4 +63,41 @@ I augmented those classes that have less than 1200 samples to 1200, and here is 
 
 My final model consisted of the following layers:
 
+1. 5 * 5 Conv, 6 channels, valid padding, ReLu activation
+
+2. 2 * 2 Max pooling, stride 2
+
+3. 5 * 5 Conv, 6 channels, valid padding, ReLu activation
+
+4. 2 * 2 Max pooling, stride 2
+
+5. 1 * 1 Conv, 400 channels, valid padding, ReLu activation
+
+6. Flatten features from 2 and 5, then concatenate
+
+7. Dropout
+
+8. Fully connected layer, 43 outputs
+
+### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+
+To train the model, I used Adam optimizer with a learning rate of 0.0005. The batch size was set to 32, and the training was run for 50 epochs. During the training process, the model with the best validation accuracy was saved.
+
+### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+
+My final model results were:
+training set accuracy of 99.97%
+validation set accuracy of 95.44%
+test set accuracy of 93.33%
+
+The model architecture I chose to use is based on a modified version of LeNet mentioned in Sermanet and LeCun. The underlying structure is LeNet, which is designed for hand write digits recognition. The difference is that there is a connection between the features after the first pooling layer and the features after the third convolutional layer. Sermanet and LeCun’s study shows that these two sets of features learn different scales of the original image, thus providing more insights.
+
+
+## Test a Model on New Images
+
+### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+
+Here are five German traffic signs that I found on the web:
+
+
 
