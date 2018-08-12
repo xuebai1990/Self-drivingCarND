@@ -19,3 +19,10 @@ Training:
 
 <img src="train_label_histogram.png" width="480" alt="Train_label_histogram" /> 
 
+Validation:
+
+<img src="valid_label_histogram.png" width="480" alt="Valid_label_histogram" /> 
+
+Test: 
+
+<img src="test_label_histogram.png" width="480" alt="Test_label_histogram" /> 
