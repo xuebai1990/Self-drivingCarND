@@ -53,9 +53,14 @@ Random rotation:
 
 Random translation
 
-<img src="random_translation.png" width="480" alt="Randomscale" /> 
+<img src="random_translate.png" width="480" alt="Randomscale" /> 
 
 I augmented those classes that have less than 1200 samples to 1200, and here is the histogram of number of samples for training set after data augmentation:
 
-<img src="train_label_after.png" width="480" alt="Randomscale" />
+<img src="train_label_histogram_augmented.png" width="480" alt="Randomscale" />
+
+### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+
+My final model consisted of the following layers:
+
 
