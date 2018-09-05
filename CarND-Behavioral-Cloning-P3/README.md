@@ -96,3 +96,26 @@ First, all images from the center camera, left camera, and right camera were loa
 
 Left:
 
+<img src="figure/left_2016_12_01_13_43_17_948.jpg" width="480" alt="left" />
+
+Center:
+
+<img src="figure/center_2016_12_01_13_43_17_948.jpg" width="480" alt="left" />
+
+Right:
+
+<img src="figure/right_2016_12_01_13_43_17_948.jpg" width="480" alt="left" />
+
+Then, image augmentation was performed by flipping image horizontally. Here is an example of image before and after flipping:
+Before:
+
+<img src="figure/center_2016_12_01_13_43_17_948.jpg" width="480" alt="left" />
+
+Afeter:
+
+<img src="figure/flipped.jpg" width="480" alt="left" />
+
+Finally, all data were randomly shuffled an split into 80% training and 20% validation.
+
+The Adam optimizer was used in the training and the mean square error was used as loss function. The training was performed with a batch size of 32 and the process consists of 4 epochs.
+
